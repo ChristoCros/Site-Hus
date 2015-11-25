@@ -1,0 +1,439 @@
+#dashboard{
+	width: 1190px;
+	height: 470px;
+	padding: 30px 5px;
+	margin: 0 auto;
+}
+
+#first_line{
+	width: 1190px;
+	height: 180px;
+}
+
+.div_dashboard{
+	float: left;
+	width: 160px;
+	height: 160px;
+	margin: 0 5px;
+	positon: relative;
+}
+
+.membres_info{
+	background: #27A9E3 url('../photo/users.png') 23px 46px no-repeat;
+}
+	.membres_info:hover{
+		background: #666 url('../photo/users.png') 23px 46px no-repeat;
+	}
+
+.commandes_info{
+	background: #28B779  url('../photo/cart.png') 31px 35px no-repeat;
+}
+	.commandes_info:hover{
+		background: #666 url('../photo/cart.png') 31px 35px no-repeat;
+	}
+
+.avis_info{
+	background: #DA542E  url('../photo/bubble.png') 41px 36px no-repeat;
+}
+	.avis_info:hover{
+		background: #666 url('../photo/bubble.png') 41px 36px no-repeat;
+	}
+
+.articles_info{
+	background: #FFB848  url('../photo/pot.png') 52px 28px no-repeat;
+}
+	.articles_info:hover{
+		background: #666 url('../photo/pot.png') 52px 28px no-repeat
+	}
+
+.newsletter_info{
+	background: #2255A4  url('../photo/newsletter.png') 36px 47px no-repeat;
+}
+	.newsletter_info:hover{
+		background: #666 url('../photo/newsletter.png') 36px 47px no-repeat;
+	}
+
+.promotions_info{
+	background: #B049FF  url('../photo/promo.png') 19px 40px no-repeat;
+}
+	.promotions_info:hover{
+		background: #666 url('../photo/promo.png') 19px 40px no-repeat;
+	}
+
+.statistiques_info{
+	background: #FF496E  url('../photo/charts.png') 27px 21px no-repeat;
+}
+	.statistiques_info:hover{
+		background: #666 url('../photo/charts.png') 27px 21px no-repeat;
+	}
+
+.dashboard_title{
+	font-size: 18px;
+	color: #4F4F4F;
+	text-align: center;
+	padding-top: 125px;
+	display: block;
+	color: #FFF;
+}
+	.dashboard_title:hover{
+		color: #FFF;
+	}
+
+.infos_cadre{
+	width: 45px;
+	height: 25px;
+	background: #F68A53;
+	margin-left: 115px;
+	color: #FFF;
+	text-align: center;
+	vertical_align: middle;
+	line-height: 25px;	
+	position: absolute;
+}
+
+#derniers_avis{
+	width: 580px;
+	min-height: 380px;
+	padding-bottom: 20px;
+	margin-left: 6px;
+	float: left;	
+}
+	#avisTitle{
+		width: 580px;
+		height: 35px;
+		background: #F68A53;		
+	}
+	#avisTitle h4{
+		color: #FFF;
+		font-weight: bold;
+		font-size: 18px;
+		vertical-align: middle;
+		line-height: 35px;
+		margin-left: 5px;
+	}
+	.comment{
+		width: 580px;
+		min-height: 100px;
+		background: #FFF;
+		display: table;
+	}
+	.comment + .comment{
+		border-top: 1px dashed #AAA;
+	}
+		.infos_comment{
+			float: left;
+			width: 150px;
+		}
+			.pseudo_comm{
+				margin: 10px 0 0 5px;
+				font-size: 16px;
+				color: #444;				
+			}
+			.infos_comment img{
+				margin: 10px 0 0 5px;
+			}
+			.date_comm{
+				margin: 10px 0 10px 5px;			
+			}
+		.affichage_comment{
+			float: left;
+			width: 410px;
+			padding: 10px;
+		}
+			.subject_comm{
+				color: #2C2C2C;
+			}
+			.comm_comm{
+				font-size: 14px;
+				color: #666;
+				margin: 10px 0;
+			}
+		.affichage_comment a{
+			margin-left: 340px;
+		}			
+
+#infos_droite{
+	float: left;
+	width: 580px;
+	min-height: 200px;
+	padding-bottom: 20px;
+	margin-left: 20px;	
+}
+	
+#chiffre_affaire{
+	width: 580px;
+}
+	#chiffre_affaire table{
+		width: 580px;
+		border-collapse: collapse;	
+	}
+	#chiffre_affaire table th{
+		width: 580px;
+		height: 35px;
+		background: #F68A53;
+		text-align: left;
+		padding-left: 20px;
+		color: #FFF;
+	}		
+	#chiffre_affaire td{
+		width: 580px;
+		height: 95px;
+		background: #FFF;
+		text-align: center;
+		font-size: 35px;
+		color: #4F4F4F;
+	}	
+	
+#current_promo{
+	width: 280px;
+	float: left;
+	margin-top: 20px;
+}	
+	#current_promo table{
+		width: 280px;
+		border-collapse: collapse;	
+	}
+	#current_promo table th{
+		width: 280px;
+		height: 35px;
+		background: #F68A53;
+		text-align: left;
+		padding-left: 20px;
+		color: #FFF;
+	}		
+	#current_promo td{
+		width: 280px;
+		height: 92px;
+		background: #FFF;
+		text-align: center;
+		font-size: 35px;
+		color: #4F4F4F;	
+	}
+	
+#visites{
+	width: 280px;
+	float: left;
+	margin: 20px 0 0 20px;
+}	
+	#visites table{
+		width: 280px;
+		border-collapse: collapse;	
+	}
+	#visites table th{
+		width: 280px;
+		height: 35px;
+		background: #F68A53;
+		text-align: left;
+		padding-left: 20px;
+		color: #FFF;
+	}		
+	#visites td{
+		width: 280px;
+		height: 92px;
+		background: #FFF;
+		text-align: center;
+		font-size: 35px;
+		color: #4F4F4F;		
+	}	
+	
+/****************************
+	   ADMINISTRATION
+****************************/
+
+.admin_article{
+	height: 460px;
+	background: #FFF;
+	margin-bottom: 15px;
+}
+
+.id_article{
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	background: #F68A53;
+	color: #FFF;
+	text-align: center;
+	font-size: 20px;
+	vertical-align: middle;
+	line-height: 30px;
+}
+
+.date_article{
+	position: absolute;
+	margin: -30px 0 0 990px;
+	color: #444;
+	font-size: 15px;
+}
+
+.ref{
+	margin: 20px 0 0 60px;
+	width: 80px;
+}
+
+.article_left{
+	float: left;
+}
+
+.admin_img{
+	float: left;
+	margin: 20px 0 0 20px;
+	width: 170px;
+	height: 270px;
+	background: #FFF;
+	line-height: 270px;
+	vertical-align: middle;
+	display: table-cell;
+	border: 1px solid #666;
+}
+	.admin_img img{
+		width: 170px;
+		vertical-align: middle;
+		line-height: 270px;
+	}
+
+.action_article{
+	width: 120px;
+	height: 50px;
+	margin: 310px 0 0 50px;
+}
+	.btn_modif{
+		float: left;
+	}
+
+	.btn_suppr{
+		float: left;
+		margin: 10px 0 0 50px;
+	}
+	
+.separateur1{
+	margin: 0px 40px 0;
+	width: 2px;
+	height: 400px;
+	background: #000;
+	float: left;
+}
+
+.content_infos{
+	float: left;
+	width: 600px;
+}
+	.content_infos h3{
+		color: #F68A53;
+		font-size: 20px;
+	}
+	
+	.description_admin{
+		margin: 30px 0;
+		height: 100px;
+	}
+	
+	.content_infos span{
+		width: 220px;
+		display: inline-block;
+	}
+	.sombre2{
+		width: 600px;
+		height: 30px;
+		background: #E9E9E9;
+		line-height: 30px;
+		padding-left: 15px;
+	}	
+	.clair2{
+		width: 600px;
+		height: 30px;
+		background: #FFF;
+		line-height: 30px;
+		padding-left: 15px;		
+	}
+
+#infosArticle_right{
+	float: left;
+	margin-top: 20px;
+}
+
+.infosArticle_design1{
+	color: #777;
+	font-size: 12px;
+}
+
+.infosArticle_design2{
+	color: #F68A53;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 7px;
+}
+
+.infosArticle_design3{
+	color: #F68A53;
+	font-size: 17px;
+	text-align: center;
+	margin-top: 7px;
+}
+
+.separateur_hori{
+	width: 200px;
+	height: 1px;
+	background: grey;
+	margin: 15px 0;
+	float: left;
+}
+
+#contentModif_article{
+	background: #FFF;
+	width: 1200px;
+	min-height: 50px;
+	padding-bottom: 1px;
+	display: table;
+	border-radius: 10px;
+}
+
+#modif_article{
+	margin: 0 auto;
+	width: 500px;
+}
+
+#btn_ajoutArticle{
+	margin-left: 510px;
+}
+
+#btn_modifArticle{
+	margin-left: 510px;
+}
+
+.btn_admin{
+	width: 380px !important;
+	margin: 20px 0 0 380px !important;
+}
+
+.form_admin{
+	margin-left: 75px !important;
+	float: left !important;
+}
+
+.cancel_btn{
+	width: 70px !important;
+	margin-left: 15px !important;
+	float: left !important;
+	padding: 11px 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,2 @@
+# Redirection lors d'une erreur 404 :
+ErrorDocument 404 http://localhost/Hus/404.php
